@@ -21,6 +21,7 @@ if config.config_file_name is not None:
 
 from app.models.users import SQLModel  # noqa
 from app.models.items import SQLModel
+from app.models.common import SQLModel
 from app.core.config import settings # noqa
 
 target_metadata = SQLModel.metadata
