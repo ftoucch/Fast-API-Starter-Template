@@ -50,9 +50,7 @@ Rename `env-example` to `.env` and update it with your database credentials and 
 
 ### 5. Alembic Migrations  
 Run the following commands to set up and apply the database migrations: 
-```bash 
-alembic revision --autogenerate -m "Initial migration"  
-```
+
 ```bash
 alembic upgrade head  
 ```
