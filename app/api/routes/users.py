@@ -10,7 +10,7 @@ from app.api.deps import CurrentUser, SessionDep, get_current_active_superuser
 from app.core.config import settings
 from app.core.security import get_password_hash, verify_password
 
-from app.models.users import User, UserCreate, UserPublic, UserRegister, UsersPublic, UserUpdate, UserUpdateMe
+from app.models.users import User, UserCreate, UserPublic, UserRegister, UsersPublic, UserUpdate, UserUpdateMe, UpdatePassword
 
 from app.models.items import Item
 from app.models.common import Message
