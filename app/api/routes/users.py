@@ -20,7 +20,7 @@ router = APIRouter(prefix="/users", tags=["users"])
 @router.get("/", dependencies=[Depends(get_current_active_superuser)], response_model=UsersPublic)
 def read_users(session: SessionDep, skip: int=0, limit: int=100) -> Any: 
     """
-    Get List of all users when logged in as a superuser
+    Get List of all users when logged in as a superuser.
     """
     count_statement = select(func.count()).select_from(User)
     count = session.exec(count_statement).all()
