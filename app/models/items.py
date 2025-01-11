@@ -25,8 +25,7 @@ class Item(ItemBase, table=True):
     owner_id: uuid.UUID = Field(
         foreign_key="user.id", nullable=False, ondelete="CASCADE"
     )
-
-    # Defining the relationship to `User` after both models are loaded
+    
     owner: "User" = Relationship(back_populates="items")
 
 # Public Item model for API responses
