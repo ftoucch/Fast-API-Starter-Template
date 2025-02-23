@@ -1,7 +1,6 @@
 # FastAPI Starter Template 🚀  
 
 A ready-to-use **FastAPI starter project** with PostgreSQL integration, database migrations, and essential configurations to jumpstart your next web application.  
-
 ---
 
 ## ✨ Features  
